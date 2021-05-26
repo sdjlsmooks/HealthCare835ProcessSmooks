@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+		  	 	
+		  	 			<medi:segmentGroup xmltag="Loop2400ServiceLineNumber" minOccurs="0" maxOccurs="1">
+
+							<medi:segment segcode="LX" xmltag="serviceLineNumber" minOccurs="1" maxOccurs="1" truncatable="true">
+								<medi:field xmltag="assignedNumber" minLength="1" maxLength="1" required="true" truncatable="true" dataType="String"/>
+							</medi:segment>							
+
+							<!--  MISSED LARGE PORTION AFTER LX - FILL IN HERE -->
+
+
+							<medi:segmentGroup xmltag="Loop2410DrugIdentification" minOccurs="0" maxOccurs="1">
+					  	 		<medi:segment segcode="LIN" xmltag="drugIdentification" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="assignedID"                  minLength="1" maxLength="2"  required="true" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier1"  minLength="1" maxLength="48"  required="true" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID"            minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier2"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID2"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier3"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID3"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier4"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID4"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier5"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID5"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier6"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID6"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier7"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceI7"            minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier8"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID8"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier9"  minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID9"           minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier10" minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID10"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier11" minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID11"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier12" minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID12"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier13" minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID13"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceIDQualifier14" minLength="1" maxLength="48"  required="false" dataType="String"/>		  	    			
+			  	    				<medi:field xmltag="productServiceID14"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 				</medi:segment>
+			  	 				
+			  	 				
+			  	 				<medi:segment segcode="CTP" xmltag="drugQuantity" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	 					<medi:field xmltag="classOfTradeCode"            minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="priceIDCode"                 minLength="3" maxLength="3"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="unitPrice"                   minLength="1" maxLength="2"   required="false" dataType="String"/>		  	 							  	 					
+			  	 					<medi:field xmltag="quantity"                    minLength="1" maxLength="2"   required="true" dataType="Integer"/>
+			  	 					<medi:field xmltag="compositeUnitOfMeasure"      minLength="1" maxLength="2"   required="true" dataType="String"/>
+			  	 					<medi:field xmltag="priceMultiplierQualifier"    minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="mulitiplier"                 minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="monetaryAmount"              minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="basisUnitPriceCode"          minLength="1" maxLength="2"   required="false" dataType="String"/>
+			  	 					<medi:field xmltag="conditionValue"              minLength="1" maxLength="2"   required="false" dataType="String"/>		  	 				
+	  		  	 					<medi:field xmltag="multPriceQuantity"          minLength="1" maxLength="2"   required="false" dataType="String"/>		  	 							  	 					
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="REF.(VY|XZ).*" segcodename="SDJLREF14" xmltag="presOrCompoundDrugNumber" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	 				</medi:segment>
+							</medi:segmentGroup>
+ 		
+							<medi:segmentGroup xmltag="Loop2420ARenderingProviderName" minOccurs="0" maxOccurs="1">
+			  	 				<medi:segment segcode="NM1.82.+" segcodename="SDJLNM1_3" xmltag="rpName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+			  	    				<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="PRV" xmltag="rpSpeciality" minOccurs="0" maxOccurs="1" truncatable="true">
+									<medi:field xmltag="providerCode"             minLength="1" maxLength="3" required="true" truncatable="false" dataType="String"/>
+									<medi:field xmltag="referenceIDQualifier"     minLength="1" maxLength="3" required="true" truncatable="false" dataType="String"/>
+									<medi:field xmltag="referenceIdentification"  minLength="1" maxLength="3" required="true" truncatable="false" dataType="String"/>
+									<medi:field xmltag="stateOrProvinceCode"      minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="providerSpecalityInfo"    minLength="1" maxLength="1" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="providerOrgCode"          minLength="3" maxLength="3" required="false" truncatable="true" dataType="String"/>					
+			  	 				</medi:segment>
+			  	 				
+			  	 				<medi:segment segcode="REF.G2.*" segcodename="SDJLREF14" xmltag="rpSecondaryID" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 									
+							</medi:segmentGroup>
+ 							
+							<medi:segmentGroup xmltag="Loop2420BPurchasedServiceProviderName" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.QB.+" segcodename="SDJLNM1_6" xmltag="psName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+			  	    				<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>
+	
+			  	 				<medi:segment segcode="REF.(0B|1G|G2).*" segcodename="SDJLREF14" xmltag="psSecondaryID" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	 				</medi:segment>			  	 						  	 			
+			  	 			</medi:segmentGroup>
+
+			  	 			<medi:segmentGroup xmltag="LP2420CServiceFacilityLocationName" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.77.+" segcodename="SDJLNM1_7" xmltag="sflName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+				  	    			<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+				  	    			<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  		    			<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="N3" segcodename="SDJLN3_3" xmltag="sflAddress" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="addressInformation"          minLength="1" maxLength="55" required="true"  dataType="String"/>
+			  	    				<medi:field xmltag="addtionalAddressInformation" minLength="1" maxLength="55" required="false" truncatable="true"/>
+			  	 				</medi:segment>
+			  	 				
+	       		        		<medi:segment segcode="N4" segcodename="SDJLN4_4" xmltag="sflCityStateZipCode" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	   					<medi:field xmltag="city"        minLength="2" maxLength="30" required="true" dataType="String"/>
+				 	    			<medi:field xmltag="state"       minLength="1" maxLength="55" required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="postalCode"  minLength="2" maxLength="2"  required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="countryCode" minLength="2" maxLength="3"  required="false" truncatable="true" dataType="String"/>
+			  		 			</medi:segment>		  		 		
+							</medi:segmentGroup>
+					
+							<medi:segmentGroup xmltag="Loop2420DSupervisingProviderName" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.DQ.+" segcodename="SDJLNM1_6" xmltag="spName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+			  	    				<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>
+	
+			  	 				<medi:segment segcode="REF.(0B|1G|G2|LU).*" segcodename="SDJLREF14" xmltag="psSecondaryID" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	 				</medi:segment>			  	 						  	 			
+			  	 			</medi:segmentGroup>
+							<medi:segmentGroup xmltag="Loop2420EOrderingProviderName" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.77.+" segcodename="SDJLNM1_7" xmltag="opnName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+				  	    			<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+				  	    			<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  		    			<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="N3" segcodename="SDJLN3_3" xmltag="opnAddress" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="addressInformation"          minLength="1" maxLength="55" required="true"  dataType="String"/>
+			  	    				<medi:field xmltag="addtionalAddressInformation" minLength="1" maxLength="55" required="false" truncatable="true"/>
+			  	 				</medi:segment>
+			  	 				
+	       		        		<medi:segment segcode="N4" segcodename="SDJLN4_4" xmltag="opnCityStateZipCode" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	   					<medi:field xmltag="city"        minLength="2" maxLength="30" required="true" dataType="String"/>
+				 	    			<medi:field xmltag="state"       minLength="1" maxLength="55" required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="postalCode"  minLength="2" maxLength="2"  required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="countryCode" minLength="2" maxLength="3"  required="false" truncatable="true" dataType="String"/>
+			  		 			</medi:segment>		
+			  		 			
+			  		 			<medi:segment segcode="REF.(0B|1G|G2).*" segcodename="SDJLREF14" xmltag="opnSecondaryID" minOccurs="0" maxOccurs="20" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="false" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="false" dataType="String"/>
+			  	 				</medi:segment>		
+	
+						  	 	<medi:segment segcode="PER.IC.+" segcodename="SDJLPER3" xmltag="opnContactInformation" minOccurs="0" maxOccurs="2" truncatable="true">
+						  	    	<medi:field xmltag="contactFunctionCode"           minLength="2" maxLength="2"   required="true" dataType="String"/>		  	    	
+			  				    	<medi:field xmltag="name"                          minLength="1" maxLength="60"  required="false" truncatable="true"  dataType="String"/>		  
+						  	    	<medi:field xmltag="communicationNumberQualifier"  minLength="2" maxLength="2"   required="false" truncatable="true" dataType="String"/>
+			  				    	<medi:field xmltag="communicationNumber"           minLength="1" maxLength="256" required="false" truncatable="true"  dataType="String"/>
+						  	    	<medi:field xmltag="communicationNumberQualifier2" minLength="2" maxLength="2"   required="false" truncatable="true" dataType="String"/>
+						  	    	<medi:field xmltag="communicationNumber2"          minLength="1" maxLength="256" required="false" truncatable="true" dataType="String"/>
+			  				    	<medi:field xmltag="communicationNumberQualifier3" minLength="2" maxLength="2"   required="false" truncatable="true" dataType="String"/>
+						  	    	<medi:field xmltag="communicationNumber3"          minLength="1" maxLength="256" required="false" truncatable="true" dataType="String"/>		  	 	
+			  				 	</medi:segment>
+			  		 			  		 		
+							</medi:segmentGroup>
+							<medi:segmentGroup xmltag="Loop2420FReferringProviderName" minOccurs="0" maxOccurs="2">
+								<medi:segment segcode="NM1.DQ.+" segcodename="SDJLNM1_7" xmltag="rpName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+			  	    				<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>
+	
+			  	 				<medi:segment segcode="REF.(0B|1G|G2).*" segcodename="SDJLREF14" xmltag="rpSecondaryID" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="referenceIdentificationQualifier" minLength="2" maxLength="3" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentification"          minLength="1" maxLength="50" required="true" dataType="String"/>
+			  	    				<medi:field xmltag="description"                      minLength="1" maxLength="80" required="false" dataType="String"/>
+			  	    				<medi:field xmltag="referenceIdentifier"              minLength="1" maxLength="1" required="false" dataType="String"/>
+			  	 				</medi:segment>			  	 						  	 			
+			  	 			</medi:segmentGroup>
+			  	 			<medi:segmentGroup xmltag="Loop2400GAmbulancePickupLocation" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.PW.+" segcodename="SDJLNM1_7" xmltag="aplName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+				  	    			<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+				  	    			<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  		    			<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="N3" segcodename="SDJLN3_3" xmltag="aplAddress" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="addressInformation"          minLength="1" maxLength="55" required="true"  dataType="String"/>
+			  	    				<medi:field xmltag="addtionalAddressInformation" minLength="1" maxLength="55" required="false" truncatable="true"/>
+			  	 				</medi:segment>
+			  	 				
+	       		        		<medi:segment segcode="N4" segcodename="SDJLN4_4" xmltag="aplCityStateZipCode" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	   					<medi:field xmltag="city"        minLength="2" maxLength="30" required="true" dataType="String"/>
+				 	    			<medi:field xmltag="state"       minLength="1" maxLength="55" required="true" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="postalCode"  minLength="2" maxLength="2"  required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="countryCode" minLength="2" maxLength="3"  required="false" truncatable="true" dataType="String"/>
+			  		 			</medi:segment>		
+							</medi:segmentGroup>
+			  	 			<medi:segmentGroup xmltag="Loop2400HAmbulanceDropOffLocation" minOccurs="0" maxOccurs="1">
+								<medi:segment segcode="NM1.45.+" segcodename="SDJLNM1_7" xmltag="adoName" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+				  	    			<medi:field xmltag="entityIDCode"           minLength="2" maxLength="3" required="true" dataType="String"/>
+				  	    			<medi:field xmltag="entityTypeQualifier"    minLength="1" maxLength="1" required="true" dataType="String"/>
+			  		    			<medi:field xmltag="lastName"               minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="firstName"              minLength="1" maxLength="35" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="middleName"             minLength="1" maxLength="25" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="namePrefix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="nameSuffix"             minLength="1" maxLength="10" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="idCodeQualifier"        minLength="1" maxLength="2" required="false" truncatable="true" dataType="String"/>						
+									<medi:field xmltag="idCode"                 minLength="1" maxLength="80" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityRelationshipCode" minLength="2" maxLength="2" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="entityIdentifierCode"   minLength="2" maxLength="3" required="false" truncatable="true" dataType="String"/>
+									<medi:field xmltag="organizationName"       minLength="1" maxLength="60" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+			  	 				
+			  	 				<medi:segment segcode="N3" segcodename="SDJLN3_3" xmltag="adoAddress" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	    				<medi:field xmltag="addressInformation"          minLength="1" maxLength="55" required="true"  dataType="String"/>
+			  	    				<medi:field xmltag="addtionalAddressInformation" minLength="1" maxLength="55" required="false" truncatable="true"/>
+			  	 				</medi:segment>
+			  	 				
+	       		        		<medi:segment segcode="N4" segcodename="SDJLN4_4" xmltag="adoCityStateZipCode" minOccurs="0" maxOccurs="1" truncatable="true">
+			  	   					<medi:field xmltag="city"        minLength="2" maxLength="30" required="true" dataType="String"/>
+				 	    			<medi:field xmltag="state"       minLength="1" maxLength="55" required="true" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="postalCode"  minLength="2" maxLength="2"  required="false" truncatable="true" dataType="String"/>
+				 	    			<medi:field xmltag="countryCode" minLength="2" maxLength="3"  required="false" truncatable="true" dataType="String"/>
+			  		 			</medi:segment>		
+							</medi:segmentGroup>
+ 				  	 			
+				  	 		<medi:segmentGroup xmltag="Loop2430LineAdjusticationInfo" minOccurs="0" maxOccurs="15">
+								<medi:segment segcode="SVD"  xmltag="lineAdjInfo" minOccurs="0" maxOccurs="1" ignoreUnmappedFields="true" truncatable="true">
+				  	    			<medi:field xmltag="iDCode"                 minLength="1" maxLength="80" required="true" truncatable="true" dataType="String"/>
+				  	    			<medi:field xmltag="monetaryAmount"         minLength="1" maxLength="18" required="true" truncatable="true" dataType="String"/>
+			  		    			<medi:field xmltag="compMedProcedureID"     minLength="1" maxLength="2"  required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="productServiceID"       minLength="1" maxLength="48" required="false" truncatable="true" dataType="String"/>
+			  	    				<medi:field xmltag="quantity"               minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>		  	    				
+			  	    				<medi:field xmltag="assignedNumber"         minLength="1" maxLength="6" required="false" truncatable="true" dataType="String"/>
+			  	 				</medi:segment>	
+	
+					  		 	<medi:segment segcode="CAS" xmltag="lineAdjustment" minOccurs="0" maxOccurs="5" truncatable="true">
+							 		<medi:field xmltag="claimAdjustmentGroupCode"      minLength="1" maxLength="2" required="true" truncatable="true"/>		  	 		
+					  	 			<medi:field xmltag="claimAdjustmentReasonCode"     minLength="1" maxLength="5" required="true" truncatable="true"/>
+						  	 		<medi:field xmltag="monetaryAmount"                minLength="1" maxLength="18" required="true" truncatable="true"/>
+				  			 		<medi:field xmltag="quantity"                      minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>
+			  	 					<medi:field xmltag="claimAdjustmentReasonCode2"    minLength="1" maxLength="5" required="false" truncatable="true"/>
+					  	 			<medi:field xmltag="monetaryAmount2"               minLength="1" maxLength="18" required="false" truncatable="true"/>
+					  	 			<medi:field xmltag="quantity2"                     minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer" />
+					  	 			<medi:field xmltag="claimAdjustmentReasonCode4"    minLength="1" maxLength="5" required="false" truncatable="true" />
+						  	 		<medi:field xmltag="monetaryAmount4"               minLength="1" maxLength="18" required="false" truncatable="true"/>
+					  		 		<medi:field xmltag="quantity4"                     minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>
+			  		 				<medi:field xmltag="claimAdjustmentReasonCode5"    minLength="1" maxLength="5" required="false" truncatable="true"/>
+				  		 			<medi:field xmltag="monetaryAmount5"               minLength="1" maxLength="18" required="false" truncatable="true"/>
+					  		 		<medi:field xmltag="quantity5"                     minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>
+					  	 			<medi:field xmltag="claimAdjustmentReasonCode6"    minLength="1" maxLength="5" required="false" truncatable="true" />
+						  	 		<medi:field xmltag="monetaryAmount6"               minLength="1" maxLength="18" required="false" truncatable="true"/>
+						  	 		<medi:field xmltag="quantity6"                     minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>
+			  		 				<medi:field xmltag="claimAdjustmentReasonCode7"    minLength="1" maxLength="5" required="false" truncatable="true"/>
+				  		 			<medi:field xmltag="monetaryAmount7"               minLength="1" maxLength="18" required="false" truncatable="true"/>
+				  	 				<medi:field xmltag="quantity7"                     minLength="1" maxLength="15" required="false" truncatable="true" dataType="Integer"/>
+			  		 			</medi:segment>
+	
+					  	 		<medi:segment segcode="DTP.573.+" segcodename="DTP" xmltag="lineCheckRemittanceDate" minOccurs="0" maxOccurs="1" truncatable="true">
+					  	 			<medi:field xmltag="dateTimeQualifiier"           minLength="3" maxLength="3" required="true" truncatable="true" dataType="String"/>
+					  	 			<medi:field xmltag="dateTimeFormatQualifiier"     minLength="2" maxLength="3" required="true" truncatable="true" dataType="String"/>
+					  	 			<medi:field xmltag="dateTimePeriod"               minLength="1" maxLength="35" required="true" truncatable="true" dataType="String"/>
+				  		 		</medi:segment>
+	
+					  	 		<medi:segment segcode="AMT" xmltag="remainingPatientLiability" minOccurs="0" maxOccurs="13" truncatable="true">
+				  	    			<medi:field xmltag="amountQualifierCode" minLength="1" maxLength="3"  required="true" truncatable="true" dataType="String"/>
+				  	    		 	<medi:field xmltag="monetaryAmount"      minLength="1" maxLength="18" required="true" truncatable="true" dataType="String" dataTypeParameters="format=YYYYMMdd"/>
+			  		    		 	<medi:field xmltag="creditDebitFlagCode" minLength="1" maxLength="1" required="false" truncatable="true" dataType="String" dataTypeParameters="format=YYYYMMdd"/>
+			  	 				</medi:segment>		  	 			  	 		
+				  	 	</medi:segmentGroup>
+
+			  	 	</medi:segmentGroup>

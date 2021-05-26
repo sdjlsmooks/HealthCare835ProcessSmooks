@@ -1,0 +1,10 @@
+Get-ChildItem "C:\Users\sdjl\projects\HealthSolutions835\hccp835\ejc-use\testdata" -Recurse -Filter *.txt | 
+Foreach-Object {
+    $content = Get-Content $_.FullName
+    Write-Output $_.FullName
+    java -jar Use835.jar $_.FullName
+    if ($LastExitCode -eq 1) {
+       Write-Output "****TEST FAILURE***"  
+       Exit
+    }
+}

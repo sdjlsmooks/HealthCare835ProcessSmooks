@@ -1,0 +1,58 @@
+File is flat file of rejection code,
+
+send the rejection code back to next gen via the 835.
+put the 
+
+If the 837 is accepted, the 835 creates an adjustment code called payment code.
+And it attaches the dollar amount that was on the original service.
+The charge amount is in the flat file.
+
+We need an 835 that links the payment to the encounter number.
+
+If there is a rejection, the payment and the encounter goes into the 835l
+
+Need an 835 created with the data that lives in the mockingbird file.
+
+Claim number is actually the client ID. -- column AL in Beacon_FlatFileLayout_20201119_NEW_NPI_SPEC_Draft.xlsx
+
+Flat file layout is in:
+
+\\bi\healthSolutions\docs\BI_OPS\ENCOUNTERS\BEACON.SubmissionDetail
+
+
+Questions:
+   1.)  What are holds, duplicates, eligibility an mod files/entries?
+   2.)  What/where are the RA4.enc files?
+   3.)  What/where are the CPTFIXED_RA4 files? 
+   4.)  What/where are the RA4_INDIGENT_FIXES files?
+   5.)  What/where are the MEDRA4 files?
+   6.)  CATCH_UP files?
+   7.)  LOSTANDFOUND
+
+
+In the files ???RA4enc_SP???RA4enc_???_Output files the Claim# is medical record number in NextGen.
+Member Number is Medicaid ID.
+
+I am going to have to match on encounter ID  (encounter is the link to the encounter ID in NextGen).
+Then the error number is going to match the Beacon Error codes to X12 error codes.
+So for example if the Beacon error code is 93, then use the crosswalk mapping to X12 error
+code PI18.
+
+
+What I may need to do is have it be a nightly process that looks in the 
+table/view from the query for a file with the timestamp of <today>
+
+select from Table DWH.dbo.HS_Encounters where FileName like MEDRA4 with ts  = todays date
+
+   Select * from DWH.dbo.HS_Encounters where FileName = 'SP20200902_MEDRA4deb Test_RA4.ENC'
+
+From that query, then find out what has been removed via this query:
+
+   Select * from DWH.dbo.HS_Encounters where FileName = 'SP20200902_MEDRA4deb Test_RA4.ENC'
+
+
+For records that have not been removed, send in an 835 marked as a payment.
+
+For records that have been removed (payment has been ACCEPTED)., send in an 835 rejection code.
+
+For each removed record, we need a reason code.

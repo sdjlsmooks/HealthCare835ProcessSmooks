@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/milyn-smooks-example-ejc-model-gen.iml" filepath="$PROJECT_DIR$/milyn-smooks-example-ejc-model-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/milyn-smooks-example-ejc-model-gen-837.iml" filepath="$PROJECT_DIR$/milyn-smooks-example-ejc-model-gen-837.iml" />
+    </modules>
+  </component>
+</project>
