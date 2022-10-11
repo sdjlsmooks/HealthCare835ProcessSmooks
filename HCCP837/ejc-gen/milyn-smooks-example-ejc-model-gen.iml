@@ -6,7 +6,7 @@
         <additionalProperties>
           <property key="Bundle-Description" value="Maintains uniform view of dependencies and build configuration for examples. Inherits from smooks-parent andmust contain just the things specific to examples." />
           <property key="Bundle-Name" value="Milyn :: Smooks Example :: EJC - Model Gen" />
-          <property key="Include-Resource" value=".edi-mode_xml.orig.swp=$MODULE_DIR$/src/main/resources/.edi-mode_xml.orig.swp,DUMMY.XML=$MODULE_DIR$/src/main/resources/DUMMY.XML,DUMMY2.xml=$MODULE_DIR$/src/main/resources/DUMMY2.xml,edi-model-04_28_2021_BACKUP_BEFORE_ANY_MODIFICATIONS.xml=$MODULE_DIR$/src/main/resources/edi-model-04_28_2021_BACKUP_BEFORE_ANY_MODIFICATIONS.xml,edi-model.xml=$MODULE_DIR$/src/main/resources/edi-model.xml,edi-mode_xml.orig=$MODULE_DIR$/src/main/resources/edi-mode_xml.orig" />
+          <property key="Include-Resource" value=".edi-mode_xml.orig.swp=$MODULE_DIR$/src/main/resources/.edi-mode_xml.orig.swp,DUMMY.XML=$MODULE_DIR$/src/main/resources/DUMMY.XML,DUMMY2.xml=$MODULE_DIR$/src/main/resources/DUMMY2.xml,edi-model-04_28_2021_BACKUP_BEFORE_ANY_MODIFICATIONS.xml=$MODULE_DIR$/src/main/resources/edi-model-04_28_2021_BACKUP_BEFORE_ANY_MODIFICATIONS.xml,edi-model.xml=$MODULE_DIR$/src/main/resources/edi-model.xml,edi-mode_xml.orig=$MODULE_DIR$/src/main/resources/edi-mode_xml.orig,test.sql=$MODULE_DIR$/src/main/resources/test.sql" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -17,6 +17,12 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
